@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import './styles.css';
+import './styles.scss';
 import IMAGE from './react.png';
 import YENOT from './yenot.svg';
 import Counter from './Counter';
