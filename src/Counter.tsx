@@ -1,4 +1,4 @@
-import { FunctionComponent, useState } from "react";
+import { FunctionComponent, useState } from 'react';
 
 const Counter: FunctionComponent = () => {
   const [count, setCount] = useState(0);
