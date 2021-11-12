@@ -12,7 +12,9 @@
     "lint": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx,json}\"",
     "lint-types": "tsc --noEmit",
     "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test-watch": "jest --watch",
+    "test-coverage": "jest --coverage"
   },
   "author": "Liene Putniņa",
   "license": "MIT",
@@ -29,6 +31,8 @@
     "@babel/runtime": "^7.16.3",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.1",
     "@teamsupercell/typings-for-css-modules-loader": "^2.5.1",
+    "@testing-library/jest-dom": "^5.15.0",
+    "@types/jest": "^27.0.2",
     "@types/react": "^17.0.34",
     "@types/react-dom": "^17.0.11",
     "@typescript-eslint/eslint-plugin": "^5.3.1",
@@ -46,6 +50,8 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^4.3.8",
+    "jest": "^27.3.1",
+    "jest-junit": "^13.0.0",
     "lint-staged": "^11.2.6",
     "node-sass": "^6.0.1",
     "prettier": "^2.4.1",
@@ -71,5 +77,8 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "jest-junit": {
+    "outputDirectory": "./coverage"
   }
 }
