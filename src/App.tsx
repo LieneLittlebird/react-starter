@@ -10,7 +10,6 @@ const App = () => {
       <h1>Edited If hometask {process.env.name}</h1>
       <img src={IMAGE} alt="React logo" width="200" height="200" />
       <img src={YENOT} alt="Yenot" width="300" />
-      <p>"My little pony"</p>
       <Counter />
     </div>
   );
