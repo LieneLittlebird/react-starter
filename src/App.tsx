@@ -1,15 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
 import './styles.scss';
-import IMAGE from './react.png';
-import YENOT from './yenot.svg';
-import Counter from './Counter';
+import Counter from './Components/Counter';
 
 const App = () => {
   return (
     <div>
-      <h1>Edited If hometask {process.env.name}</h1>
-      <img src={IMAGE} alt="React logo" width="200" height="200" />
-      <img src={YENOT} alt="Yenot" width="300" />
+      <h1>If hometask {process.env.name}</h1>
       <Counter />
     </div>
   );
